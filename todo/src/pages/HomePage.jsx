@@ -1,6 +1,7 @@
 import React from 'react'
 import icon from '../assets/add.png'
 import Tasks from '../components/Tasks'
+import './styles/homepagestyles.css'
 
 const HomePage = () => {
   return (
@@ -9,7 +10,7 @@ const HomePage = () => {
             <div className='text-[30px]'>
                 Todo
             </div>
-            <div className='h-full overflow-auto scrollbar-hide'>
+            <div className='h-full overflow-auto custom-scroll'>
                 <Tasks />
                 <Tasks />
                 <Tasks />
