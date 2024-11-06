@@ -5,11 +5,15 @@ import Tasks from '../components/Tasks'
 const HomePage = () => {
   return (
     <div className='bg-gradient-to-br from-purple-800 to-black h-screen flex flex-col justify-center items-center'>
-        <div className='text-white bg-black w-[40vw] h-[65vh] px-10 py-5'> 
+        <div className='text-white w-[40vw] h-[65vh] px-10 py-5'>
             <div className='text-[30px]'>
                 Todo
             </div>
-            <Tasks/>
+            <div className='h-full overflow-auto scrollbar-hide'>
+                <Tasks />
+                <Tasks />
+                <Tasks />
+            </div>
         </div>
         <div className='border-2 border-white opacity-60 rounded-[20px] w-[40vw] h-[8vh] mt-10 bg-transparent px-5 flex flex-row'>
             <input type="text" placeholder='New Task' className='bg-transparent text-white caret-white h-full w-full border-none px-5 outline-none' />
